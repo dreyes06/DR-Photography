@@ -1,0 +1,23 @@
+.schedule{
+    background-color: lightgray;
+    height: 100vh;
+}
+/* #4d5055 */
+.title{
+    display: flex;
+    justify-content: center;
+    color: rgb(51, 143, 228);
+    font-size: 40px;
+    box-sizing: border-box;
+    /* width: 150px; */
+    text-decoration: underline white;
+    font-family: 'Comfortaa', cursive;
+    /* margin-top: 10px; */
+    
+}
+
+.calendly-inline-widget{
+    min-width: 320px;
+    height: 800px;
+    
+}

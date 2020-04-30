@@ -2,6 +2,9 @@ require('dotenv').config()
 const express = require('express'),
       massive = require('massive'),
       session = require('express-session'),
+      userCtrl = require('./Controllers/userCtrl'),
+      apptCtrl = require('./Controllers/apptCtrl'),
+      cartCtrl = require('./Controllers/cartController'),
       {SERVER_PORT, SESSION_SECRET, DB_STRING} = process.env
       app = express();
 
@@ -23,9 +26,16 @@ massive({
 })
 
 // user endpoints
-// app.post('/user/register', userCtrl.register)
-// app.post('/user/login', userCtrl.login)
-// app.get('/user/logout', userCtrl.logout)
+app.post('/user/register', userCtrl.register)
+app.post('/user/login', userCtrl.login)
+app.get('/user/logout', userCtrl.logout)
+
+//cart endpoints
+app.get('/api/merch', cartCtrl.getMerch)
+app.post('/api/payment', cartCtrl.completePayment)
+app.post('/api/cart-item', cartCtrl.addToCart)
+app.get('/api/cart/:id', cartCtrl.getCart)
+app.delete('/api/cart-item/:id', cartCtrl.deleteCartItem)
 
 //appointment endpoints
 // app.post('/api/sched', apptCtrl.createAppt)
