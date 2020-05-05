@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link} from 'react-router-dom'
-// import Header from './Components/Header/Header'
+import Header from './Components/Header/Header'
 import './App.css';
 import routes from './routes';
 
@@ -9,7 +9,7 @@ class App extends Component{
     return(
       <div className='header' >
         <Link to='/' className='drp' style={{color: 'rgb(100, 156, 240)'}}><h1>DR Photography</h1></Link>
-        {/* <Header/> */}
+        <Header/>
             <nav className='navbar'>
                 <Link to='/' style={{ textDecoration: 'none' }} >Home</Link>
                 <Link to='/about' style={{ textDecoration: 'none' }}>About</Link>

@@ -1,0 +1,9 @@
+.profile-title{
+    display: flex;
+    justify-content: center;
+    color: rgb(51, 143, 228);
+    font-size: 40px;
+    box-sizing: border-box;
+    text-decoration: underline white;
+    font-family: 'Comfortaa', cursive;
+}

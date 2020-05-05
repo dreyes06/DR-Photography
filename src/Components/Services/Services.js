@@ -1,11 +1,12 @@
 import React from 'react'
-import Cart from '../Cart/Cart'
+import './Services.css'
+
 
 const Services = () => {
     return (
-        <div>
-            <h3>Services</h3>
-            <Cart/>
+        <div className='services'>
+            <h3 className='servicesTitle'>Services</h3>
+            
         </div>
     )
 }

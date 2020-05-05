@@ -34,6 +34,7 @@ app.get('/user/logout', userCtrl.logout)
 app.get('/api/merch', cartCtrl.getMerch)
 app.post('/api/payment', cartCtrl.completePayment)
 app.post('/api/cart-item', cartCtrl.addToCart)
+app.post('/api/create-cart', cartCtrl.createCart)
 app.get('/api/cart/:id', cartCtrl.getCart)
 app.delete('/api/cart-item/:id', cartCtrl.deleteCartItem)
 

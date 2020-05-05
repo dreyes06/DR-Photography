@@ -1,0 +1,50 @@
+.products{
+    background-color: lightgrey;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center space-between;
+    flex-direction: column;
+    align-items: center ;
+    padding: 20px;
+}
+
+.productsTitle{
+    color: rgb(100, 156, 240);
+    font-size: 30px;
+    text-decoration: underline white;
+    font-family: 'Comfortaa', cursive;
+}
+
+.product-container{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    height: 35%;
+}
+
+.product-image{
+    box-shadow: 0px 0px 0px gray, 
+    -2px 2px 5px gray, 2px 2px 5px gray;
+}
+
+.product-text{
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-size: 16px;
+    text-decoration: underline rgb(100, 156, 240);
+}
+
+.product-button{
+    font-family: 'Baloo Bhaina 2', cursive;
+    width: 110px;
+    border-radius: 10px;
+    border: rgb(100, 156, 240) solid 2px;
+}
+
+.product-button:hover{
+    border: solid white 2px;
+    background-color: rgb(100, 156, 240);
+    color: white;
+}

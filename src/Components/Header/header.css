@@ -1,3 +1,48 @@
 .header{
     background-color: #4d5055;
 }
+
+/* .login-register{
+    display: flex;
+    flex-direction: row;
+    
+} */
+
+.login{
+    font-family: 'Comfortaa', cursive;
+    color: white;
+    text-decoration: underline rgb(100, 156, 240);
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.header-input{
+    font-family: 'Baloo Bhaina 2', cursive;
+    border-radius: 6px;
+    border: rgb(100, 156, 240) solid 2px;
+    margin-right: 5px;
+    margin-bottom: 2px;
+    
+}
+
+.header-button{
+    /* font-family: 'Baloo Bhaina 2', cursive;
+    width: 110px;
+    border-radius: 6px;
+    border: rgb(100, 156, 240) solid 2px;
+    margin-bottom: 2px; */
+    width: 90px;
+    border: solid white 2px;
+    background-color: rgb(100, 156, 240);
+    color: white;
+    border-radius: 6px;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+.header-button:hover{
+    border-radius: 6px;
+    border: rgb(100, 156, 240) solid 2px;
+    background-color: white;
+    color: rgb(100, 156, 240);
+    margin-bottom: 2px;
+}

@@ -14,7 +14,12 @@ module.exports = {
             let hash = bcrypt.hashSync(password, salt)
             const newUser = await db.users.add_user(email, hash, firstName, lastName)
 
-            req.session.user = newUser[0]
+            let userCart = await db.cart.create_cart(newUser[0].user_id)
+            let sessionUser = {...newUser[0], ... userCart[0]}
+
+            delete newUser[0].password
+            req.session.user = sessionUser
+            console.log(req.session.user)
             res.status(201).json(req.session.user)
     },
     login: async(req, res) => {
@@ -31,8 +36,12 @@ module.exports = {
                 res.status(401).json('Passowrd incorrect')
             }
 
+            let userCart = await db.cart.get_cart_id(existingUser[0].user_id)
+            let sessionUser = {...existingUser[0], ... userCart[0]}
+
             delete existingUser[0].password
-            req.session.user = existingUser[0]
+            req.session.user = sessionUser
+            console.log(req.session.user)
             res.status(202).json(req.session.user)
     },
     logout: (req, res) => {
