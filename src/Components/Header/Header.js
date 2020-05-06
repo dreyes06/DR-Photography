@@ -19,6 +19,7 @@ class Header extends Component {
       firstName: "",
       lastName: "",
       newUser: false,
+      dropdownView: false
     };
   }
 
@@ -35,6 +36,10 @@ class Header extends Component {
   handleToggle = () => {
     this.setState({ newUser: !this.state.newUser });
   };
+
+  dropdownToggle = () => {
+    this.setState({dropdownView: !this.state.dropdownView})
+  }
 
   createCart = () => {
     const { user_id } = this.props.user;
@@ -152,7 +157,54 @@ class Header extends Component {
             </section>
           )
         ) : null}
-
+      <div className='dropdown-button' onClick={this.dropdownToggle} >
+                    Menu
+                </div>
+                {
+                this.state.dropdownView
+                ? (
+                  <nav className="dropdown-menu">
+                  <Link
+                    to="/"
+                    style={{ textDecoration: "none", fontFamily: "Comfortaa, cursive" }}
+                  >
+                    Home
+                  </Link>
+                  <Link
+                    to="/about"
+                    style={{ textDecoration: "none", fontFamily: "Comfortaa, cursive" }}
+                  >
+                    About
+                  </Link>
+                  <Link
+                    to="/serv"
+                    style={{ textDecoration: "none", fontFamily: "Comfortaa, cursive" }}
+                  >
+                    Services
+                  </Link>
+                  <Link
+                    to="/sched"
+                    style={{ textDecoration: "none", fontFamily: "Comfortaa, cursive" }}
+                  >
+                    Schedule
+                  </Link>
+                  <Link
+                    to="/prof"
+                    style={{ textDecoration: "none", fontFamily: "Comfortaa, cursive" }}
+                  >
+                    Profile
+                  </Link>
+                  <Link
+                    to="/prod"
+                    style={{ textDecoration: "none", fontFamily: "Comfortaa, cursive" }}
+                  >
+                    Products
+                  </Link>
+                </nav>
+                )
+                : 
+                null
+                }
         <nav className="navbar">
           <Link
             to="/"

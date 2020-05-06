@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {HashRouter as Router} from 'react-router-dom'
+import {HashRouter, BrowserRouter} from 'react-router-dom'
 import store from './redux/store'
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux';
 import './reset.css'
+const Router = process.env.NODE_ENV === 'development' ? HashRouter : BrowserRouter
 
 ReactDOM.render(
   <Provider store={store}>
