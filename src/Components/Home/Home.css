@@ -1,0 +1,18 @@
+.home-container{
+    background-image: url(https://lh3.googleusercontent.com/TmONKJK3gMMl4rt_2psZayqJoUyfUfEyMkkI9D58kmji5-f8UZwn4xsy0SIlsruYDo3m0pEINBY5fO0skX0vODR38mH0pAUpv9wy04SYW8Rc6dackAh1mqdec2NEGIgEeRevuAeYj-XmnSaDRkdeVLz_lIy8SinrzouDLW9cgWGtjTfA5j35yuk4_Sf6WmXwo7nt_7ELXcxEEK8xEo_EU_Es9Ed7V10-BXPZbhYpaSt3G2UZ_8op0cBXXW4uOt5YCr3hUBQARufZMeBGNaXmv8PC43I0C306qhCb30xd4ri7NWDCtESJavi2y3wyD7qGID_UIp9xRTrJh7tQsXT8i4eOqDSQxK5CvpQZH6_BzYw-X-cJXb6gFcaNx8K0A91lwpGY9trgINupWt8F3FNi8DWvPMhDsQ8HWzjX74p2qQQNlJYYk3H6AKzFGvqE94LQ_z17mS_KL-EVWRvYSOc124347WF4kS7c1arS6Qe3jkpvE0T4y_7eyDgTt-g3woth8m0Vz3IpiA8rpnYZlaGJcLzTQD5s1dsQwvG0l8R1mvyuuB8qS44vc9qa8q1Q_aqHwnqfo_wkXmYfsjHkgOywiZIPYCgruxQAYX-YVXO-KN7dru0BnEVdbdT7gdRxMGh9lcflg_0gdHkWaj6Yw06mmrQq75eNe00VzX4OREazDX29f1v6Y2F9kcJ-5qMkuA=w924-h920-no);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+
+.home-title{
+    display: flex;
+    justify-content: center;
+    padding-top: 230px;
+    font-size: 65px;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    text-decoration: white underline;
+}

@@ -49,18 +49,18 @@ class Cart extends Component {
     const mappedCart = this.state.cart.map((item, i) => {
       return (
         <div key={i} className="cart-container">
-          <h3>Cart</h3>
+          <h3 className='cart-title' >Cart</h3>
           <img src={item.image} alt={item.name} className="product-image" />
-          <p>{item.name}</p>
-          <p>{item.description}</p>
-          <p>${item.price}</p>
+          <p className='cart-text'>{item.name}</p>
+          <p className='cart-text'>{item.description}</p>
+          <p className='cart-text'>${item.price}</p>
           <StripeCheckout
             label="Purchase"
             token={this.onToken}
             stripeKey={stripe.publicKey}
             amount={Math.round(item.price * 100)}
           />
-          <button onClick={() => this.deleteCartItem(item.cart_item_id)}>
+          <button className='remove-button' onClick={() => this.deleteCartItem(item.cart_item_id)}>
             Remove Item
           </button>
         </div>

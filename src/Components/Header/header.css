@@ -1,12 +1,11 @@
 .header{
     background-color: #4d5055;
+    height: 70px;
+    /* display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    justify-items: center; */
 }
-
-/* .login-register{
-    display: flex;
-    flex-direction: row;
-    
-} */
 
 .login{
     font-family: 'Comfortaa', cursive;
@@ -14,6 +13,29 @@
     text-decoration: underline rgb(100, 156, 240);
     border-radius: 10px;
     margin-right: 5px;
+}
+
+.register-login-q{
+    font-family: 'Comfortaa', cursive;
+    color: white;
+    text-decoration: underline rgb(100, 156, 240);
+    margin-left: 5px;
+}
+
+.q-button{
+    text-decoration: underline white;
+    color: rgb(100, 156, 240);
+}
+
+.login-register{
+    position: fixed;
+    background-color: #66666660;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .header-input{
@@ -45,4 +67,14 @@
     background-color: white;
     color: rgb(100, 156, 240);
     margin-bottom: 2px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    padding-left: 50%;
+    padding-bottom: 10px;
+    height: 100%;
+    
 }

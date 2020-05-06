@@ -8,3 +8,36 @@
     align-items: center ;
     padding: 20px;
 }
+
+.cart-title{
+    color: rgb(100, 156, 240);
+    font-size: 35px;
+    text-decoration: underline white;
+    font-family: 'Comfortaa', cursive;
+}
+
+/* .cart-image{
+    max-width: 22vw;
+    max-height: 20%;
+} */
+
+.cart-text{
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-size: 16px;
+    text-decoration: underline rgb(100, 156, 240);
+}
+
+.remove-button{
+    width: 120px;
+    border: solid rgb(100, 156, 240) 2px;
+    background-color: white;
+    color: rgb(100, 156, 240);
+    border-radius: 6px;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+.remove-button:hover{
+    border: solid white 2px;
+    background-color: rgb(245, 100, 100);
+    color: white;
+}

@@ -1,3 +1,8 @@
+body{
+    background-color: lightgray;
+    height: 100%;
+}
+
 .services{
     background-color: lightgrey;
     width: 100vw;
@@ -9,10 +14,40 @@
     padding: 20px;
 }
 
-.servicesTitle{
+.services-title{
     color: rgb(100, 156, 240);
-    font-size: 30px;
+    font-size: 35px;
     text-decoration: underline white;
     font-family: 'Comfortaa', cursive;
     
 }
+
+.services-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 900px;
+    width: 80vw;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.services-image-container{
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    flex-direction: row;
+
+}
+
+.services-image{
+    display: flex;
+    justify-content: space-evenly;
+     align-items: center;
+    flex-direction: row; 
+    max-width: 22%;
+    max-height: 90%; 
+    
+}  
+

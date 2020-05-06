@@ -7,12 +7,12 @@
     display: flex;
     justify-content: center;
     color: rgb(51, 143, 228);
-    font-size: 40px;
+    font-size: 35px;
     box-sizing: border-box;
     /* width: 150px; */
     text-decoration: underline white;
     font-family: 'Comfortaa', cursive;
-    /* margin-top: 10px; */
+    padding-top: 15px;
     
 }
 

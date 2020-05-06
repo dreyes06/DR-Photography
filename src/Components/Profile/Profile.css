@@ -7,3 +7,26 @@
     text-decoration: underline white;
     font-family: 'Comfortaa', cursive;
 }
+
+.welcome{
+    font-family: 'Comfortaa', cursive;
+    color: rgb(100, 156, 240);
+    text-decoration: underline rgb(100, 156, 240);
+}
+
+.logout-button{
+    width: 90px;
+    border: solid white 2px;
+    background-color: rgb(100, 156, 240);
+    color: white;
+    border-radius: 6px;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+.logout-button:hover{
+    border-radius: 6px;
+    border: rgb(100, 156, 240) solid 2px;
+    background-color: white;
+    color: rgb(100, 156, 240);
+    margin-bottom: 2px;
+}
