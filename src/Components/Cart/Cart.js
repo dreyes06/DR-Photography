@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import StripeCheckout from "react-stripe-checkout";
 import { connect } from "react-redux";
-import stripe from "../../stripe";
+// import stripe from "stripe";
 import axios from "axios";
 import './Cart.css'
 
@@ -57,7 +57,7 @@ class Cart extends Component {
           <StripeCheckout
             label="Purchase"
             token={this.onToken}
-            stripeKey={stripe.publicKey}
+            stripeKey='pk_test_89FVl5YE0nNu489kY7jzXt8H008Fsuxgk7'
             amount={Math.round(item.price * 100)}
           />
           <button className='remove-button' onClick={() => this.deleteCartItem(item.cart_item_id)}>

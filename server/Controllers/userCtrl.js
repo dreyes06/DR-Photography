@@ -47,5 +47,14 @@ module.exports = {
     logout: (req, res) => {
         req.session.destroy()
         res.sendStatus(200)
+    },
+    updateUser: (req, res) => {
+        const {id} = req.params,
+              {email} = req.body
+              db = req.app.get('db');
+        
+        db.users.update_first_name(email, id)
+        .then(user => res.status(200).json(user))
+        .catch(err => console.log(err));
     }
 }

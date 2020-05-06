@@ -3,7 +3,6 @@ const express = require('express'),
       massive = require('massive'),
       session = require('express-session'),
       userCtrl = require('./Controllers/userCtrl'),
-      apptCtrl = require('./Controllers/apptCtrl'),
       cartCtrl = require('./Controllers/cartController'),
       {SERVER_PORT, SESSION_SECRET, DB_STRING} = process.env,
       app = express(),
@@ -32,6 +31,7 @@ massive({
 app.post('/user/register', userCtrl.register)
 app.post('/user/login', userCtrl.login)
 app.get('/user/logout', userCtrl.logout)
+app.put('/api/user/:id', userCtrl.updateUser  )
 
 //cart endpoints
 app.get('/api/merch', cartCtrl.getMerch)
